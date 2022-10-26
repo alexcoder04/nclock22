@@ -4,7 +4,6 @@ PosX: 5
 PosY: 20
 
 FontSize: 7
-#Color: Lib.Colors.Silver
 Color: Lib.Colors.Grey
 Hidden: true
 

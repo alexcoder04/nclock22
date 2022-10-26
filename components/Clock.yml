@@ -4,7 +4,6 @@ PosX: 60
 PosY: 80
 
 FontSize: 15
-#Color: Lib.Colors.Darkblue
 Color: Lib.Colors.Black
 
 Label: "loading..."

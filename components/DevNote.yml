@@ -3,14 +3,6 @@ Inherit: Base.TextField
 PosX: 75
 PosY: 170
 
-#Color: Lib.Colors.Turquoise
 Color: Lib.Colors.Blue
 
 Label: "nclock22 by alexcoder04"
-
-#Update: |
-#  if App.Data.Var.DarkMode then
-#    self.Color = Lib.Colors.Silver
-#  else
-#    self.Color = Lib.Colors.Grey
-#  end
