@@ -1,0 +1,26 @@
+ - Id: edit
+   Name: Edit
+   Submenues:
+    - Id: dark_mode
+      Name: "Toggle Dark Mode"
+      Function: |
+        App.Data.Var.DarkMode = not App.Data.Var.DarkMode
+        if App.Data.Var.DarkMode then
+          App.Gui.Background = Lib.Colors.Black
+        else
+          App.Gui.Background = Lib.Colors.White
+        end
+    - Id: edit_mode
+      Name: "Toggle Edit Mode"
+      Function: |
+        App.Data.Var.EditMode = not App.Data.Var.EditMode
+ - Id: debug
+   Name: Debug
+   Submenues:
+    - Id: debug_mode
+      Name: "Toggle Debug Mode"
+      Function: |
+        App.Data.Var.DebugMode = not App.Data.Var.DebugMode
+        if not App.Data.Var.DebugMode then
+          Lib.Debug:UnPrint()
+        end

@@ -1,0 +1,26 @@
+Inherit: Base.TextField
+
+PosX: 5
+PosY: 20
+
+FontSize: 7
+#Color: Lib.Colors.Silver
+Color: Lib.Colors.Grey
+Hidden: true
+
+Label: "You are now in edit mode. Use bottom letter rows to change the time"
+
+Update: |
+  if App.Data.Var.EditMode then
+    self.Hidden = false
+  else
+    self.Hidden = true
+    return
+  end
+
+  if App.Data.Var.DarkMode then
+    self.Color = Lib.Colors.Silver
+  else
+    self.Color = Lib.Colors.Grey
+  end
+

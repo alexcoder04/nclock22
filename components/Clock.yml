@@ -1,0 +1,25 @@
+Inherit: Base.TextField
+
+PosX: 60
+PosY: 80
+
+FontSize: 15
+#Color: Lib.Colors.Darkblue
+Color: Lib.Colors.Black
+
+Label: "loading..."
+
+Update: |
+  self.Label, iclock = self:GetTimeStr()
+
+  if App.Data.Var.DebugMode then
+    Lib.Debug:Print(tostring(App.Data.Var.Start) .. " : " .. tostring(iclock))
+  end
+
+  if App.Data.Var.DarkMode then
+    self.Color = Lib.Colors.White
+  else
+    self.Color = Lib.Colors.Black
+  end
+
+  return true
