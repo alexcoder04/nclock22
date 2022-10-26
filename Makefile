@@ -6,7 +6,7 @@ OUT_FILE = $(NAME).tns
 all: clean build upload
 
 build:
-	SOL_USE_LOCAL_LIB=1 SOL_LOCAL_LIB_PATH="$(HOME)/Repos/sol-lib" sol -a build .
+	sol -a build .
 	luna $(TEMP_LUA) $(OUT_FILE)
 
 clean:

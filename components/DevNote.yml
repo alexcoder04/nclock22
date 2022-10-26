@@ -3,6 +3,6 @@ Inherit: Base.TextField
 PosX: 75
 PosY: 170
 
-Color: Lib.Colors.Blue
+Color: Lib.Colors.Accent
 
 Label: "nclock22 by alexcoder04"
