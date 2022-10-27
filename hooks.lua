@@ -1,6 +1,6 @@
 
 -- adjust time
-function Hooks:CharIn(c)
+function Hooks.CharIn(c)
     if not App.Data.Var.EditMode then return end
 
     -- seconds
