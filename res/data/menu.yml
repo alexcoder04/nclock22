@@ -4,8 +4,7 @@
     - Id: dark_mode
       Name: "Toggle Dark Mode"
       Function: |
-        App.Gui.DarkMode = not App.Gui.DarkMode
-        platform.window:invalidate()
+        Lib.Colors.DarkModeToggle()
     - Id: edit_mode
       Name: "Toggle Edit Mode"
       Function: |

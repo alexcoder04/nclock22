@@ -69,3 +69,5 @@ end
 App:AddElement(Components.Custom.Clock:new())
 App:AddElement(Components.Custom.EditModeIndicator:new())
 App:AddElement(Components.Custom.DevNote:new())
+
+App.Gui.DarkMode = true
