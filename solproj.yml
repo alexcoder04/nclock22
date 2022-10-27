@@ -1,3 +1,6 @@
 
 RefreshRate: 1
-SolVersion: "latest"
+SolVersion: "1.0.0"
+Name: "nclock22"
+Author: "alexcoder04"
+License: "GNU GPLv3"
